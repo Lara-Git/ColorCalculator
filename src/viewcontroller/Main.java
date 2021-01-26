@@ -9,11 +9,13 @@ import javafx.stage.Stage;
 public class Main extends Application
 {
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception
+    {
         Parent root = FXMLLoader.load(getClass().getResource("viewcontroller/sample.fxml"));
         primaryStage.setTitle("Color Calculator");
-        primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
+        primaryStage.setScene(new Scene(root));
+
         primaryStage.show();
     }
 
